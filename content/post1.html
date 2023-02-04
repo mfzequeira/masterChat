@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is HTTP?</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">MasterChat</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../roadmap.html">Roadmap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="post0.html">Start</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="featured">
+        <div class="intro">
+            <h1>What is HTTP?</h1>
+            <p>HTTP (Hypertext Transfer Protocol) is a protocol for transmitting data over the internet, particularly for web-based applications. It’s the foundation of data communication for the World Wide Web, allowing clients and servers to communicate and transfer data between each other.
+HTTP was first defined in 1991 by Tim Berners-Lee, the inventor of the World Wide Web, and has since become the most widely used protocol for exchanging information on the web. It is used by browsers such as Google Chrome, Mozilla Firefox, and Safari, to request and receive web pages, images, videos, and other resources from servers on the internet.<br><br>
+HTTP operates on the application layer of the internet protocol suite, meaning it’s responsible for the structure and content of data transmitted over the internet. It uses a request-response model to communicate between clients and servers. The client, typically a web browser, sends a request to the server, which then sends back a response.<br><br>
+In a typical HTTP request, the client specifies the URL (Uniform Resource Locator) of the resource it wants to access, such as a web page or an image. The request also includes a request method, such as GET or POST, that indicates the type of action the client wants to perform. The request also contains headers, which provide additional information about the request, such as the type of content the client is expecting to receive or the client’s preferred language.<br><br>
+The server processes the request and sends back a response. The response includes a status code, which indicates the outcome of the request. For example, a status code of 200 OK means that the request was successful and the requested resource was found, while a status code of 404 Not Found means that the requested resource could not be found on the server. The response also contains headers, which provide additional information about the response, such as the type and size of the content being returned.<br><br>
+One of the key features of HTTP is that it’s a stateless protocol, meaning it doesn’t store information about previous requests. This makes it simple and efficient, but also means that it’s not well suited to applications that require persistent connections or real-time communication. To overcome this limitation, HTTP can be combined with other protocols, such as WebSockets or HTTP Long Polling, to create a more sophisticated communication model.<br><br>
+HTTP has evolved over the years, with new versions being introduced to address various limitations and improve performance. HTTP/1.0 was the first version of HTTP, but it was soon replaced by HTTP/1.1, which introduced several important improvements, such as persistent connections and better support for caching.<br><br>
+HTTP/2, released in 2015, was the first major revision of HTTP in over 15 years. It introduced several key features that significantly improve performance, including binary encoding, header compression, and server push. HTTP/2 also made it possible to multiplex multiple requests over a single connection, making it faster and more efficient.<br><br>
+HTTP/3, released in 2018, builds on the features of HTTP/2 and adds support for QUIC (Quick UDP Internet Connections), a new transport protocol that provides improved performance and security. QUIC combines the reliability and security of TCP with the low latency and bandwidth efficiency of UDP, making it a good choice for applications that require fast and reliable communication.<br><br>
+In conclusion, HTTP is an essential component of the World Wide Web, providing the foundation for data communication and enabling clients and servers to exchange information and resources. Over the years, it has evolved to become faster, more efficient, and more secure, and it continues to be the most widely used protocol for exchanging information on the web.</p>
+        </div>
+    </section>
+    <section class="post-nav">
+        <button class="previous styled" type="button">Previous</button>
+        <button class="next styled" type="button">Next</button>
+    </section>
+    <footer class="footer">
+        <img class="github-icon" src="../images/Octocat copy.png" width="40px" height="40px">
+        <figcaption>Made by me.</figcaption>
+    </footer>
+    <script src="../app.js"></script>
+</body>
+</html>

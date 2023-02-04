@@ -160,14 +160,18 @@ p {
 }
 
 .roadmap {
-    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-@media(max-width:576px){
+#frontend{
+    max-width: 940px;
+}
+
+@media(max-width:640px){
     .hamburger {
         display: block;
     }
-
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
@@ -177,7 +181,6 @@ p {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -189,13 +192,13 @@ p {
         text-align: center;
         transition: 0.3s;
     }
-
     .nav-item {
         margin: 16px 0;
     }
-
     .nav-menu.active {
         left: 0;
     }
-
+    .roadmap {
+        font-size: large;
+    }
 }
