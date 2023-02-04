@@ -6,8 +6,7 @@
 
 body {
     min-height:100%; 
-    position:relative; 
-    padding-bottom:[footer-height]
+    position:relative;
 }
 
 header {
@@ -87,7 +86,6 @@ p {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: darkgray;
 }
@@ -144,7 +142,6 @@ p {
     max-width: 940px;
     margin: auto;
     margin-top: 20px;
-    min-width: ;
     height: 70px;
     background-color: whitesmoke;
     color: darkgray;
@@ -164,8 +161,12 @@ p {
     padding-bottom: 20px;
 }
 
-#frontend{
+#frontend {
     max-width: 940px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 @media(max-width:640px){

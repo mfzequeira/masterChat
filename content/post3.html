@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS and how it works</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">MasterChat</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../roadmap.html">Roadmap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="post0.html">Start</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="featured">
+        <div class="intro">
+            <h1>DNS and how it works.</h1>
+            <p>Domain Name System (DNS) is a decentralized, hierarchical system for translating human-readable domain names into numerical IP addresses. The IP address is used to locate and identify a specific device on the internet.<br><br>
+                DNS is essential for the proper functioning of the internet. Without it, users would have to memorize and manually type in the IP addresses of websites, which would be a very cumbersome process.<br><br>
+                The process of translating domain names into IP addresses is called “resolution”. When a user requests access to a website, their computer sends a request to a DNS resolver, which is responsible for finding the IP address associated with the domain name. The resolver first checks its local cache to see if the information it needs is stored there. If the information is not found in the cache, the resolver sends a query to one of the root DNS servers.<br><br>
+                Root servers are responsible for providing information about the top-level domains (TLDs), such as .com, .org, and .net. When a resolver receives information from a root server, it can then send a query to a TLD server to get information about the domain’s authoritative name server.<br><br>
+                Authoritative name servers are the final source of information about a domain name and its associated IP address. When the resolver receives information from the authoritative name server, it caches the information for a specified amount of time, called the “time-to-live” (TTL).<br><br> Subsequent requests for the same domain name will be answered using the cached information, reducing the number of requests that have to be sent over the network.<br><br>
+                DNS is hierarchical, meaning that the resolution process starts at the root and works its way down the tree of domain names. This design helps to distribute the load of resolving domain names across many servers, making the system scalable and resilient.<br><br>
+                In addition to providing basic resolution services, DNS can also be used to provide other types of information about a domain, such as email servers and IP addresses, as well as security information such as DNSSEC (Domain Name System Security Extensions) records.<br><br>
+                DNSSEC is a set of extensions to DNS that provide origin authentication and data integrity for DNS data. This helps to protect against attacks such as cache poisoning, where an attacker changes the information stored in a DNS cache, causing the resolver to return the wrong IP address.<br><br>
+                DNS can also be used to implement content delivery networks (CDNs), which are networks of servers that deliver content to users based on their location. This can help to reduce the latency and improve the performance of delivering content over the internet.<br><br>
+                Another use of DNS is for domain name registration. To register a domain name, an individual or organization must go through a registrar, which is an organization that has been accredited by one of the Internet Corporation for Assigned Names and Numbers (ICANN) to sell domain names.<br><br>
+                Once a domain name is registered, the registrar will provide the owner with the information needed to set up their authoritative name server. The owner can then use the name server to manage their domain and its associated information, such as the IP address of their website.<br><br>
+                In conclusion, DNS is a crucial component of the internet infrastructure that provides a way to translate human-readable domain names into numerical IP addresses, making it easier for users to find and access websites and other online resources. The hierarchical, decentralized nature of DNS provides scalability, resilience, and security, ensuring that the system can continue to operate effectively even as the number of users and the amount of data being transferred over the internet continue to grow.</p>
+        </div>
+    </section>
+    <section class="post-nav">
+        <a href="post2.html"><button class="previous styled" type="button">Previous</button></a>
+        <a href="post4.html"><button class="next styled" type="button">Next</button></a>
+    </section>
+    <footer class="footer">
+        <img class="github-icon" src="../images/Octocat copy.png" width="40px" height="40px">
+        <figcaption>Made by me.</figcaption>
+    </footer>
+    <script src="../app.js"></script>
+</body>
+</html>
